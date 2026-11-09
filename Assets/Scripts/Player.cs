@@ -1,9 +1,15 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Dog : MonoBehaviour
+public class Player : MonoBehaviour
 {
     Vector2 pos;
+    Animator animator;
+
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
